@@ -1,0 +1,1 @@
+A silly toy R package used for teaching purposes. It's not actually intended to be useful.
