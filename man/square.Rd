@@ -2,18 +2,21 @@
 % Please edit documentation in R/square.R
 \name{square}
 \alias{square}
-\title{Square a vector}
+\alias{cube}
+\title{Square or Cube a vector}
 \usage{
 square(x)
+
+cube(x)
 }
 \arguments{
-\item{x}{The vector to be squared.}
+\item{x}{The vector to be squared or cubed.}
 }
 \value{
-A vector that is the square of \code{x}.
+A vector that is the square (for \code{square}) or cube (for \code{cube}) of \code{x}.
 }
 \description{
-That's it -- this function just squares a vector.
+That's it -- these functions just square or cube a vector.
 }
 \details{
 This function isn't complicated.
@@ -23,11 +26,14 @@ section!
 
 Here are some reasons why putting a list in this section is excessive:
 \itemize{
-     \item This \code{square} function is quite simple.
-     \item There's nothing else to say about \code{square}.
+     \item These functions are quite simple.
+     \item There's nothing else to say about these functions.
 }
+
+If you really want to see more, check out the internal \code{\link{pow}}
+function that these functions depend on.
 }
 \examples{
-square(1:10)
+cube(1:10)
 square(-5)
 }
