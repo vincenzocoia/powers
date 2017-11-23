@@ -3,8 +3,11 @@
 #' That's it -- these functions just square or cube a vector.
 #'
 #' @param x The vector to be squared or cubed.
+#' @param plot_it Display a plot of \code{x} vs the output? Use logical.
+#' \code{FALSE} by default.
 #'
-#' @return A vector that is the square (for \code{square}) or cube (for \code{cube}) of \code{x}.
+#' @return A vector that is the square (for \code{square}) or
+#' cube (for \code{cube}) of \code{x}.
 #'
 #' @details
 #' This function isn't complicated.
@@ -25,8 +28,8 @@
 #' square(-5)
 #' @rdname square
 #' @export
-square <- function(x) pow(x, a=2)
+square <- function(x, plot_it=FALSE) pow(x, a=2, plot_it=plot_it)
 
 #' @rdname square
 #' @export
-cube <- function(x) pow(x, a=3)
+cube <- function(x, plot_it=FALSE) pow(x, a=3, plot_it=plot_it)

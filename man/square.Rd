@@ -5,12 +5,15 @@
 \alias{cube}
 \title{Square or Cube a vector}
 \usage{
-square(x)
+square(x, plot_it = FALSE)
 
-cube(x)
+cube(x, plot_it = FALSE)
 }
 \arguments{
 \item{x}{The vector to be squared or cubed.}
+
+\item{plot_it}{Display a plot of \code{x} vs the output? Use logical.
+\code{FALSE} by default.}
 }
 \value{
 A vector that is the square (for \code{square}) or cube (for \code{cube}) of \code{x}.

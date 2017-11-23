@@ -5,8 +5,12 @@
 #' Why not? Because I said so!
 #'
 #' @param x Vector to raise to some power.
-#' @param a Power to raise \code{x} by. Default is 2 (although doing
-#' so is rather silly!)
+#' @param a Power to raise \code{x} by.
+#' @param plot_it Display a plot of \code{x} vs the output? Use logical.
 #'
 #' @return The vector \code{x}, raised to the power of \code{a}.
-pow <- function(x, a=2) x^a
+pow <- function(x, a, plot_it) {
+    res <- x^a
+    if (plot_it) print(ggplot2::qplot(x, res))
+    return(res)
+}
