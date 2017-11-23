@@ -1,10 +1,10 @@
 ---
-title: "Using the `powers` function"
+title: "Using the `powers` package"
 author: "Vincenzo Coia"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using the `powers` function}
+  %\VignetteIndexEntry{Using the `powers` package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
