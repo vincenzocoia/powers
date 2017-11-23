@@ -36,7 +36,7 @@ If you really want to see more, check out the internal \code{\link{pow}}
 function that these functions depend on.
 }
 \examples{
-cube(1:10)
+cube(tenvec)
 square(-5)
 reciprocal(2)
 }
