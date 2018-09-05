@@ -2,8 +2,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 **Note**: This R package is not mean to be "serious". It's just for teaching purposes.
 
-`powers`
-========
+powers
+======
 
 This is an R package that gives `sqrt()` friends by providing other power functions.
 
