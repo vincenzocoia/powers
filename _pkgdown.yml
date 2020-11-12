@@ -1,0 +1,14 @@
+destination: docs
+
+home:
+  title: powers
+  description: Convenient Computation of Powers
+
+navbar:
+  right:
+   - icon: fa-github
+     href: https://github.com/vincenzocoia/powers
+
+authors:
+  Vincenzo Coia:
+    href: http://vincenzocoia.com
