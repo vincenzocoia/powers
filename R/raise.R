@@ -16,13 +16,19 @@
 #' raise(2, to = 1:4)
 #' raise(as.list(1:4), to = 2)
 raise <- function(x, to) {
-    if (is.numeric(x) && is.numeric(to)) {
-        return(x ^ to)
+    if (is.list(x)) {
+        x <- unlist_if_possible(x)
     }
-    if (is.list(x) || is.list(to)) {
-        return(purrr::map2_dbl(x, to, `^`))
+    if (is.list(to)) {
+        to <- unlist_if_possible(to)
     }
-    stop("Expecting input `x` and `to` to be numeric or a list of single numerics,",
-         " but `x` is of class ", class(x)[1],
-         " and `to` is of class ", class(to)[1])
+    if (!is.numeric(x)) {
+        stop("Expecting input `x` to be numeric, but received an object of class",
+             class(x)[1])
+    }
+    if (!is.numeric(to)) {
+        stop("Expecting input `to` to be numeric, but received an object of class",
+             class(to)[1])
+    }
+    x ^ to
 }
