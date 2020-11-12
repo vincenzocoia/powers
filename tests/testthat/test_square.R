@@ -1,5 +1,3 @@
-context("Squaring non-numerics")
-
 num_vec <- c(0, -4.6, 3.4)
 num_list <- as.list(num_vec)
 
@@ -20,4 +18,11 @@ test_that("Logicals and character vectors don't work", {
     expect_error(cube("three"))
     expect_error(reciprocal(TRUE))
     expect_error(raise("four", to = TRUE))
+})
+
+test_that("Non-numeric singleton lists don't work", {
+    expect_error(square(list(FALSE)))
+    expect_error(cube(list(3, 4:5)))
+    expect_error(reciprocal("four"))
+    expect_error(raise(3, to = list(1:4)))
 })
