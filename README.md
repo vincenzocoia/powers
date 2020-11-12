@@ -11,13 +11,14 @@ coverage](https://codecov.io/gh/vincenzocoia/powers/branch/master/graph/badge.sv
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
 
-**Note**: This R package is not mean to be “serious”. It’s just for
-teaching purposes.
+**Note**: The real purpose of this R package is for demonstrating how to
+make an R package.
 
 # powers
 
-This is an R package that gives `sqrt()` friends by providing other
-power functions.
+This is an R package that gives `sqrt()` some friends by providing other
+power functions. The purrr package is used under the hood, so that
+either an (atomic) vector or a list can be input.
 
 ## Installation
 
@@ -33,14 +34,9 @@ devtools::install_github("vincenzocoia/powers")
 See the vignette for more extensive use, but here’s an example:
 
 ``` r
-powers::reciprocal(2)
+library(powers)
+reciprocal(2)
 #> [1] 0.5
+cube(list(1, 4, 5))
+#> [1]   1  64 125
 ```
-
-## For Developers
-
-(Again, I don’t actually intend for anyone to develop this silly
-package, but if I did, here’s what I’d write.)
-
-Use the internal `pow` function as the machinery for the front-end
-functions such as `square`, `cube`, and `reciprocal`.

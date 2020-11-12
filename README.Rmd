@@ -39,6 +39,7 @@ devtools::install_github("vincenzocoia/powers")
 See the vignette for more extensive use, but here's an example:
 
 ```{r example}
+library(powers)
 reciprocal(2)
 cube(list(1, 4, 5))
 ```
