@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-__Note__: This package isn't actually meant to be "serious". I made it just for teaching purposes.
+__Note__: This package package is only meant for expository purposes -- although you might just find it handy!
 
 Want to compute powers without having to use `^` or `**`? Give `sqrt` some friends by loading the `powers` package! 
 
@@ -25,20 +25,9 @@ cube(1:10)
 reciprocal(1:10)
 ```
 
-`apply`-family friendly, too!
+List-friendly inputs, as well:
 
 ```{r}
-my_list <- list(1:10, 0.5, -0.7)
-## So base-R-boring!
-lapply(my_list, function(x) x^2)
-## Use powers instead!
-lapply(my_list, square)
+cube(list(1, 4, 5))
 ```
 
-It even comes with the ability to display its output in plot form!
-
-```{r}
-reciprocal(1:10, plot_it=TRUE)
-```
-
-Wow!!!
