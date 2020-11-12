@@ -15,8 +15,9 @@ test_that("list inputs work, too.", {
     expect_identical(reciprocal(num_list), 1 / num_vec)
 })
 
-test_that("Logicals automatically convert to numeric.", {
-    logic_vec <- c(TRUE, TRUE, FALSE)
-    expect_identical(square(logic_vec), logic_vec^2)
-    expect_identical(cube(logic_vec), logic_vec^3)
+test_that("Logicals and character vectors don't work", {
+    expect_error(square(TRUE))
+    expect_error(cube("three"))
+    expect_error(reciprocal(TRUE))
+    expect_error(raise("four", to = TRUE))
 })

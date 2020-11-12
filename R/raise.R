@@ -15,6 +15,14 @@
 #' raise(1:4, to = 2)
 #' raise(2, to = 1:4)
 #' raise(as.list(1:4), to = 2)
-pow <- function(x, to) {
-    purrr::map2_dbl(x, to, `^`)
+raise <- function(x, to) {
+    if (is.numeric(x) && is.numeric(to)) {
+        return(x ^ to)
+    }
+    if (is.list(x) || is.list(to)) {
+        return(purrr::map2_dbl(x, to, `^`))
+    }
+    stop("Expecting input `x` and `to` to be numeric or a list of single numerics,",
+         " but `x` is of class ", class(x)[1],
+         " and `to` is of class ", class(to)[1])
 }
