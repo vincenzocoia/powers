@@ -14,9 +14,6 @@
 #' }
 #' of \code{x}.
 #'
-#' @details
-#' If you really want to see more, check out the internal \code{\link{pow}}
-#' function that these functions depend on.
 #' @examples
 #' cube(tenvec)
 #' square(-5)

@@ -28,10 +28,6 @@ of \code{x}.
 Square, cube, or take the reciprocal/inverse
 of a vector OR a list of numbers.
 }
-\details{
-If you really want to see more, check out the internal \code{\link{pow}}
-function that these functions depend on.
-}
 \examples{
 cube(tenvec)
 square(-5)
