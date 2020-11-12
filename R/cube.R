@@ -1,3 +1,5 @@
-#' @rdname square
+#' @rdname convenience
 #' @export
-cube <- function(x, plot_it=FALSE) pow(x, a=3, plot_it=plot_it)
+cube <- function(x) {
+    raise(x, to = 3)
+}
