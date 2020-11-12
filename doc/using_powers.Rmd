@@ -1,0 +1,33 @@
+---
+title: "Using the `powers` package"
+author: "Vincenzo Coia"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the `powers` package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+__Note__: This package package is only meant for expository purposes -- although you might just find it handy!
+
+Want to compute powers without having to use `^` or `**`? Give `sqrt` some friends by loading the `powers` package! 
+
+```{r}
+library(powers)
+```
+
+Want squares, cubes, or reciprocals? Easy.
+
+```{r}
+square(1:10)
+cube(1:10)
+reciprocal(1:10)
+```
+
+List-friendly inputs, as well:
+
+```{r}
+cube(list(1, 4, 5))
+```
+

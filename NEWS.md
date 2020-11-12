@@ -1,3 +1,8 @@
+# powers 0.2.1
+
+* More informative error messages given.
+* Functions now deliberately break when inputting a list of logicals. 
+
 # powers 0.2.0
 
 * Functions now have compatibility with lists.
