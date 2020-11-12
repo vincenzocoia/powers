@@ -3,7 +3,6 @@
 \docType{package}
 \name{powers}
 \alias{powers}
-\alias{powers-package}
 \title{Convenient Computation of Powers}
 \description{
 Are you tired of using the power operator, \code{^} or \code{**} in R?
