@@ -1,9 +1,9 @@
 #' Apply a useful power
 #'
-#' That's it -- these functions just square, cube, or take the
-#' reciprocal/inverse of a vector.
+#' Square, cube, or take the reciprocal/inverse
+#' of a vector OR a list of numbers.
 #'
-#' @param x The vector to be squared or cubed.
+#' @param x Vector or list of numbers
 #' @param plot_it Display a plot of \code{x} vs the output? Use logical.
 #' \code{FALSE} by default.
 #'
@@ -27,11 +27,5 @@
 #' @export
 square <- function(x, plot_it=FALSE) pow(x, a=2, plot_it=plot_it)
 
-#' @rdname square
-#' @export
-cube <- function(x, plot_it=FALSE) pow(x, a=3, plot_it=plot_it)
 
 
-#' @rdname square
-#' @export
-reciprocal <- function(x, plot_it=FALSE) pow(x, a=-1, plot_it=plot_it)
