@@ -7,7 +7,9 @@
 #' @return A flattened list, or an error if the list does
 #' not contain only numeric singletons.
 #'
-#' @example
+#' @noRd
+#'
+#' @examples
 #' unlist_if_possible(list(1, 4, 5))
 unlist_if_possible <- function(x) {
     input_code <- rlang::enexpr(x)
@@ -32,7 +34,9 @@ unlist_if_possible <- function(x) {
 #' @return Single logical; \code{TRUE} if all list entries are numeric
 #' vectors of length 1.
 #'
-#' @example
+#' @noRd
+#'
+#' @examples
 #' is_list_numeric_singletons(list(1, 4, 5))
 #' is_list_numeric_singletons(list(1:4, 5))
 #' is_list_numeric_singletons(list("hello"))
