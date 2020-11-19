@@ -1,3 +1,7 @@
+# powers 0.2.2
+
+* Changed internal documentation examples.
+
 # powers 0.2.1
 
 * More informative error messages given.
